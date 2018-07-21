@@ -1,0 +1,16 @@
+<html>
+<body>
+<form name="myform">
+expression:<input type="text" name="expression"><br>
+<button type="button" onclick="compute()">evaluate</button><br><br>
+<script>
+function compute()
+{
+document.myform.ans.value=eval(document.myform.expression.value);
+}
+</script>
+<p>your answer is</p>
+<input type="text" name="ans">
+</form>
+</body>
+</html>
